@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/thankyou.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap">
+    <title>New Page</title>
+</head>
+<body>
+
+    <div class="thankyou_page_wrap">
+    <div class="thankyou_page">
+
+
+
+    <!-- ここにコンテンツを追加 -->
+        <h1 class="title">
+        <span>送</span>
+        <span>信</span>
+        <span>が</span>
+        <span>完</span>
+        <span>了</span>
+        <span>し</span>
+        <span>ま</span>
+        <span>し</span>
+        <span>た</span>
+        <span>🤍</span>
+        </h1>
+
+    </div>
+
+
+    <div>
+    <a href="http://127.0.0.1:5500/index.html">
+        <button type="button" onclick="history.back()">戻る</button>
+        </a>
+    </div>
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+
+const CLASSNAME = "-visible";
+const TIMEOUT = 1500;
+const $target = $(".title");
+
+setInterval(() => {
+  $target.addClass(CLASSNAME);
+  setTimeout(() => {
+    $target.removeClass(CLASSNAME);
+  }, TIMEOUT);
+}, TIMEOUT * 2);
+    </script>
+
+
+
+
+</body>
+</html>
